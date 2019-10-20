@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/YesevaOne-Regular.ttf");
+}
+
+body {
+  background-color: #D8BfD8;
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: normal;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content-width {
+  max-width: 900px;
+  margin:  0 auto;
+}
+
+.profile-info {
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #8A2BE2;
+  padding: 30px 0;
+  color: #F0f8FF;
+}
+
+.profile-info img   {
+  border-radius: 100%;
+}
+.info p {
+     font-size: 35px;
+     margin: 0 7px;
+}
+.info h1{
+  font-size: 50px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid  #F0f8FF;
+  margin-bottom: 33px;
+}
+ .info a {
+   font-size: 35px;
+   cursor: pointer;
+ }
+.info a:hover {
+  color: #DA70D6;
+}
+.contacts {
+  display: flex;
+}
+
+.info {
+  margin-left: 30px;
+
+}
+.education {
+   margin-top: 60px;
+}
+.education h2 {
+  font-size: 40px;
+  padding-bottom: 4px;
+  /* border-bottom: 1px solid rgb(1, 1, 1); */
+  /* margin-bottom: 33px; */
+  margin-right: 60px;
+}
+.education div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(1, 1, 1);
+}
+.education ul {
+  display: none;
+}
+li h3 {
+  font-size: 25px;
+}
+li  p {
+  font-size: 20px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  margin-top: 40px;
+}
+
+
+.project-info {
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  font-size: 40px;
+}
+.project-info li {
+  font-size: 30px;
+}
+
+.project-info ul {
+  display: block;
+}
+.swiper-slide a {
+    margin-right: 60px;
+}
+.swiper-slide {
+  overflow: hidden;
+  justify-content: space-between;
+  /* padding: 0 20px; */
+  height: 500px;
+  display: flex;
+}
+.swiper-container {
+  margin-top: 100px;
+  width: 1000px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  padding: 10px 15px;
+  border: 1px solid #8A2BE2;
+  margin-top: 30px;
+}
+.button p {
+  font-size: 30px;
+  margin-right: 50px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #8A2BE2;
+}
+.show-description {
+display: none;
+}
+@media (max-width: 640px) {
+    .show-description {
+        margin-top: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 30px;
+    }
+    .project-info li {
+          font-size: 25px;
+    }
+    .button {
+      display: none;
+    }
+    .swiper-slide {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    .swiper-container {
+      width: 500px;
+    }
+    .swiper-slide a {
+      width: fit-content;
+
+      margin: 0 auto;
+        margin-top: 30px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-slide {
+      height: 600px;
+    }
+    .project-info ul {
+      display: none;
+    }
+
+}
